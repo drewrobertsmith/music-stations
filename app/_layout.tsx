@@ -1,3 +1,4 @@
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { setAudioModeAsync } from "expo-audio";
 import { Stack } from "expo-router";
 import { useEffect } from "react";
@@ -14,6 +15,11 @@ export default function RootLayout() {
     };
     setUpAudio();
   }, []);
+  const queryClient = new QueryClient();
 
-  return <Stack />;
+  return (
+    <QueryClientProvider client={queryClient}>
+      <Stack />
+    </QueryClientProvider>
+  );
 }
