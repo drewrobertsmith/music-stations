@@ -3,6 +3,7 @@ import {
   AudioSource,
   AudioStatus,
   useAudioPlayer,
+  useAudioPlayerStatus,
 } from "expo-audio";
 import React, { createContext, useContext, useEffect, useState } from "react";
 
@@ -36,6 +37,12 @@ export default function AudioProvider({
     player.pause();
   };
 
+  //Subscribe to player status updates
+  const playerStatus = useAudioPlayerStatus(player);
+  useEffect(() => {
+    setStatus(playerStatus);
+  }, [playerStatus]);
+
   useEffect(() => {
     return () => {
       player.remove();
@@ -58,3 +65,11 @@ export default function AudioProvider({
 }
 
 export const useAudio = () => useContext(AudioContext);
+
+// helper to compare sources
+export const isSameSource = (a: AudioSource | null, b: AudioSource) => {
+  if (!a) return false;
+  if (typeof a === "string") return a === b;
+  if (typeof a === "number") return a === b;
+  return a.uri === (b as any).uri;
+};

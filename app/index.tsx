@@ -25,9 +25,14 @@ export default function Index() {
 }
 
 const StationItem = ({ item }: { item: Station }) => {
+  const { play } = useAudio();
   return (
     <View style={styles.itemContainer}>
-      <TouchableOpacity onPress={() => { }}>
+      <TouchableOpacity
+        onPress={() => {
+          play({ uri: item.fallbackstream });
+        }}
+      >
         <Text style={styles.stationTitle}>{item.title}</Text>
       </TouchableOpacity>
     </View>
@@ -35,13 +40,23 @@ const StationItem = ({ item }: { item: Station }) => {
 };
 
 const Player = () => {
-  const { status } = useAudio();
+  const { pause, player, status } = useAudio();
+
+  const handlePlayPausePress = () => {
+    if (player.playing) {
+      pause();
+    } else {
+      player.play();
+    }
+  };
+
   return (
     <View style={styles.playerContainer}>
       <FontAwesome5
         name={status?.playing ? "pause" : "play"}
         size={50}
         color="black"
+        onPress={handlePlayPausePress}
       />
       <Text>Select a stream to see metadata</Text>
       <Image
