@@ -30,7 +30,7 @@ export const STATION_DATA: Station[] = [
     name: "MJST",
     applogoM:
       "https://moodybible.canto.com/direct/image/08s24giflh6b9dbauumhrfv01r/n1CNUtGjxSFMyNIqIZtUQgPdjY4/original?content-type=image%2Fjpeg&name=Majesty_1400x1400.jpg",
-    bannerColor: "#ffffff",
+    bannerColor: "#66bac4",
     stream:
       "http://playerservices.streamtheworld.com/api/livestream-redirect/IM_2AAC.aac",
     fallbackstream:
