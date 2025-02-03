@@ -1,3 +1,4 @@
+import AudioProvider from "@/contexts/audio-context";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { setAudioModeAsync } from "expo-audio";
 import { Stack } from "expo-router";
@@ -18,8 +19,10 @@ export default function RootLayout() {
   const queryClient = new QueryClient();
 
   return (
-    <QueryClientProvider client={queryClient}>
-      <Stack />
-    </QueryClientProvider>
+    <AudioProvider>
+      <QueryClientProvider client={queryClient}>
+        <Stack />
+      </QueryClientProvider>
+    </AudioProvider>
   );
 }

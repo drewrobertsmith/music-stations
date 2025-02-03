@@ -1,11 +1,17 @@
 import { useAudio } from "@/contexts/audio-context";
 import { Station, STATION_DATA } from "@/station-data";
 import { FontAwesome5 } from "@expo/vector-icons";
-import { Button, FlatList, Image, StyleSheet, Text, View } from "react-native";
+import {
+  Button,
+  FlatList,
+  Image,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
 
 export default function Index() {
-  const { player, play, pause, status } = useAudio();
-
   return (
     <View style={styles.container}>
       <FlatList
@@ -21,15 +27,22 @@ export default function Index() {
 const StationItem = ({ item }: { item: Station }) => {
   return (
     <View style={styles.itemContainer}>
-      <Text style={styles.stationTitle}>{item.title}</Text>
+      <TouchableOpacity onPress={() => { }}>
+        <Text style={styles.stationTitle}>{item.title}</Text>
+      </TouchableOpacity>
     </View>
   );
 };
 
 const Player = () => {
+  const { status } = useAudio();
   return (
     <View style={styles.playerContainer}>
-      <FontAwesome5 name="play" size={50} color="black" />
+      <FontAwesome5
+        name={status?.playing ? "pause" : "play"}
+        size={50}
+        color="black"
+      />
       <Text>Select a stream to see metadata</Text>
       <Image
         source={{ uri: STATION_DATA[0].applogoM }}
