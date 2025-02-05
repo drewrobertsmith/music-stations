@@ -21,7 +21,20 @@ export default function RootLayout() {
   return (
     <AudioProvider>
       <QueryClientProvider client={queryClient}>
-        <Stack />
+        <Stack
+          screenOptions={
+            {
+              // headerShown: false,
+            }
+          }
+        >
+          <Stack.Screen
+            name="index"
+            options={{
+              title: "Music Stations",
+            }}
+          />
+        </Stack>
       </QueryClientProvider>
     </AudioProvider>
   );
