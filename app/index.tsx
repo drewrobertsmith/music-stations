@@ -5,6 +5,7 @@ import { Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import { useState } from "react";
 import { FlatList, StyleSheet, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function Index() {
   const [stationAccentColor, setStationAccentColor] = useState("#e5e5e5");
@@ -12,7 +13,9 @@ export default function Index() {
   return (
     <>
       <StatusBar style="auto" />
-      <View style={[styles.container, { backgroundColor: stationAccentColor }]}>
+      <SafeAreaView
+        style={[styles.container, { backgroundColor: stationAccentColor }]}
+      >
         <FlatList
           data={STATION_DATA}
           keyExtractor={(item) => item.id}
@@ -24,7 +27,7 @@ export default function Index() {
           )}
         />
         <Player />
-      </View>
+      </SafeAreaView>
     </>
   );
 }

@@ -11,7 +11,6 @@ export default function StationItem({
   setStationAccentColor: React.Dispatch<SetStateAction<string>>;
 }) {
   const { play, currentSource, setCurrentSource, player } = useAudio();
-  const [selectedStation, setSelectedStation] = useState("#000000");
 
   return (
     <View style={styles.itemContainer}>
@@ -56,7 +55,7 @@ const styles = StyleSheet.create({
     paddingVertical: 12,
   },
   stationTitle: {
-    fontSize: 44,
+    fontSize: 40,
     fontWeight: "bold",
   },
 });

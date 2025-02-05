@@ -22,11 +22,9 @@ export default function RootLayout() {
     <AudioProvider>
       <QueryClientProvider client={queryClient}>
         <Stack
-          screenOptions={
-            {
-              // headerShown: false,
-            }
-          }
+          screenOptions={{
+            headerShown: false,
+          }}
         >
           <Stack.Screen
             name="index"

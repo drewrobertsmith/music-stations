@@ -62,6 +62,7 @@ export default function Player() {
 const styles = StyleSheet.create({
   playerContainer: {
     flex: 1,
+    marginHorizontal: 8,
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
@@ -80,7 +81,7 @@ const styles = StyleSheet.create({
   },
   metadataTextTitle: {
     fontWeight: "bold",
-    fontSize: 18,
+    fontSize: 14,
     marginBottom: 4,
     flexWrap: "wrap",
     width: "100%",
