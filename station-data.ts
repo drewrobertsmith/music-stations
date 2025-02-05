@@ -88,4 +88,17 @@ export const STATION_DATA: Station[] = [
     fallbackstream:
       "http://playerservices.streamtheworld.com/api/livestream-redirect/WMBIAM.mp3",
   },
+  {
+    id: "27998",
+    tritonId: "MB2",
+    title: "Moody Radio Network",
+    name: "MDRN",
+    applogoM:
+      "https://moodybible.canto.com/direct/image/cfjcrucctd3avf20h55c5vj800/XF2jF3Eq7pyGeAUTLkEaX5Yzmz4/original?content-type=image%2Fpng&name=Moody+Radio+Network.png",
+    bannerColor: "#799b3d",
+    stream:
+      "http://playerservices.streamtheworld.com/api/livestream-redirect/MB2AAC.aac",
+    fallbackstream:
+      "http://playerservices.streamtheworld.com/api/livestream-redirect/MB2.mp3",
+  },
 ];

@@ -52,7 +52,8 @@ export default function StationItem({
 
 const styles = StyleSheet.create({
   itemContainer: {
-    paddingVertical: 16,
+    flex: 1,
+    paddingVertical: 12,
   },
   stationTitle: {
     fontSize: 44,

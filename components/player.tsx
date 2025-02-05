@@ -27,25 +27,33 @@ export default function Player() {
         size={50}
         color="black"
         onPress={handlePlayPausePress}
+        style={styles.icon}
       />
-      {status?.isBuffering || isLoading || !currentSource ? (
-        <Text>{}</Text>
-      ) : (
-        <View>
-          <Text style={styles.metadataText} numberOfLines={1}>
-            {data?.title}
+      <View style={styles.metadataContainer}>
+        {data?.artist || data?.album ? (
+          <>
+            <Text style={styles.metadataTextTitle} numberOfLines={2}>
+              {data?.title || currentSource?.stationName}
+            </Text>
+            <Text
+              style={[
+                styles.metadataTextArtistAlbum,
+                { display: data?.artist ? "flex" : "none" },
+              ]}
+              numberOfLines={2}
+            >
+              {data?.artist ? `${data?.artist} - ${data?.album}` : ""}
+            </Text>
+          </>
+        ) : (
+          <Text style={[styles.metadataTextTitle, styles.centeredText]}>
+            {currentSource?.stationName}
           </Text>
-          <Text style={styles.metadataText} numberOfLines={1}>
-            {`${data?.artist} - ${data?.album}`}
-          </Text>
-        </View>
-      )}
+        )}
+      </View>
       <Image
         source={{ uri: currentSource?.albumArt }}
-        height={40}
-        width={40}
-        borderRadius={4}
-        resizeMode="contain"
+        style={styles.metadataImage}
       />
     </View>
   );
@@ -53,14 +61,44 @@ export default function Player() {
 
 const styles = StyleSheet.create({
   playerContainer: {
-    padding: 24,
     flex: 1,
     flexDirection: "row",
-    justifyContent: "space-between",
+    justifyContent: "center",
     alignItems: "center",
   },
-  metadataText: {
-    fontSize: 14,
+  icon: {
+    marginRight: 16,
+    flexShrink: 0,
+  },
+  metadataContainer: {
+    flex: 1,
+    maxWidth: "70%",
     paddingHorizontal: 8,
+    flexWrap: "wrap",
+    justifyContent: "center", // Add this to center content vertically
+    alignItems: "center", // Add this to center content horizontally
+  },
+  metadataTextTitle: {
+    fontWeight: "bold",
+    fontSize: 18,
+    marginBottom: 4,
+    flexWrap: "wrap",
+    width: "100%",
+  },
+  centeredText: {
+    textAlign: "center",
+  },
+  metadataTextArtistAlbum: {
+    fontSize: 12,
+    flexWrap: "wrap",
+    width: "100%",
+  },
+  metadataImage: {
+    width: 40,
+    height: 40,
+    borderRadius: 4,
+    resizeMode: "contain",
+    marginLeft: 16,
+    flexShrink: 0,
   },
 });

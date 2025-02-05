@@ -26,7 +26,9 @@ export default function Index() {
 
 const styles = StyleSheet.create({
   container: {
-    paddingHorizontal: 8,
     flex: 1,
+    paddingHorizontal: 8,
+    paddingBottom: 8,
+    justifyContent: "space-between",
   },
 });
