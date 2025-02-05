@@ -1,10 +1,16 @@
+import { getTritonMetadata } from "@/api/metadata-request";
 import { useAudio } from "@/contexts/audio-context";
 import { STATION_DATA } from "@/station-data";
 import { FontAwesome5 } from "@expo/vector-icons";
+import { useQuery } from "@tanstack/react-query";
+import { useEffect } from "react";
 import { Image, StyleSheet, Text, View } from "react-native";
 
 export default function Player() {
-  const { pause, player, status } = useAudio();
+  const { pause, player, status, currentSource } = useAudio();
+  const { data, isLoading, error } = useQuery(
+    getTritonMetadata(currentSource?.tritonId),
+  );
 
   const handlePlayPausePress = () => {
     if (player.playing) {
@@ -13,6 +19,7 @@ export default function Player() {
       player.play();
     }
   };
+
   return (
     <View style={styles.playerContainer}>
       <FontAwesome5
@@ -21,12 +28,24 @@ export default function Player() {
         color="black"
         onPress={handlePlayPausePress}
       />
-      <Text>Select a stream to see metadata</Text>
+      {status?.isBuffering || isLoading || !currentSource ? (
+        <Text>{}</Text>
+      ) : (
+        <View>
+          <Text style={styles.metadataText} numberOfLines={1}>
+            {data?.title}
+          </Text>
+          <Text style={styles.metadataText} numberOfLines={1}>
+            {`${data?.artist} - ${data?.album}`}
+          </Text>
+        </View>
+      )}
       <Image
-        source={{ uri: STATION_DATA[0].applogoM }}
+        source={{ uri: currentSource?.albumArt }}
         height={40}
         width={40}
         borderRadius={4}
+        resizeMode="contain"
       />
     </View>
   );
@@ -34,10 +53,14 @@ export default function Player() {
 
 const styles = StyleSheet.create({
   playerContainer: {
-    padding: 32,
+    padding: 24,
     flex: 1,
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
+  },
+  metadataText: {
+    fontSize: 14,
+    paddingHorizontal: 8,
   },
 });

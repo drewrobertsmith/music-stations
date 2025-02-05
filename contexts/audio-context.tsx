@@ -5,13 +5,29 @@ import {
   useAudioPlayer,
   useAudioPlayerStatus,
 } from "expo-audio";
-import React, { createContext, useContext, useEffect, useState } from "react";
+import React, {
+  createContext,
+  SetStateAction,
+  useContext,
+  useEffect,
+  useState,
+} from "react";
+
+interface Track {
+  trackId: string;
+  url: string;
+  tritonId: string;
+  albumArt: string;
+  stationName: string;
+}
 
 interface AudioContextType {
   player: AudioPlayer;
   play: (source: AudioSource) => void;
   pause: () => void;
   status: AudioStatus | null;
+  currentSource: Track | null;
+  setCurrentSource: React.Dispatch<SetStateAction<Track | null>>;
 }
 
 const AudioContext = createContext<AudioContextType>(null!);
@@ -23,11 +39,14 @@ export default function AudioProvider({
 }) {
   const player = useAudioPlayer();
   const [status, setStatus] = useState<AudioStatus | null>(null);
+  const [currentSource, setCurrentSource] = useState<Track | null>(null);
 
   const play = (source: AudioSource) => {
     try {
       player.replace(source);
+      console.log("source replaced");
       player.play();
+      console.log("player playing");
     } catch (error) {
       console.error("playback error:", error);
     }
@@ -57,6 +76,8 @@ export default function AudioProvider({
         play,
         pause,
         status,
+        currentSource,
+        setCurrentSource,
       }}
     >
       {children}

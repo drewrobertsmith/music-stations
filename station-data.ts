@@ -21,7 +21,7 @@ export const STATION_DATA: Station[] = [
     stream:
       "http://playerservices.streamtheworld.com/api/livestream-redirect/IM_1AAC.aac",
     fallbackstream:
-      "http://playerservices.streamtheworld.com/api/livestream-redirect/IM_1.mp3",
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/IM_1.mp3",
   },
   {
     id: "493866",
@@ -69,7 +69,7 @@ export const STATION_DATA: Station[] = [
     name: "SGR",
     applogoM:
       "https://moodybible.canto.com/direct/image/0trvejb5pt75rduq8ggn738c6e/UIEQzzS-rJUX4n2NlgEAgZfdnFM/original?content-type=image%2Fpng&name=so-gospel-radio-logo_580x580.png",
-    bannerColor: "#e6e3da",
+    bannerColor: "#005281",
     stream:
       "http://playerservices.streamtheworld.com/api/livestream-redirect/IM_5AAC.aac",
     fallbackstream:
@@ -82,7 +82,7 @@ export const STATION_DATA: Station[] = [
     name: "rdmd",
     applogoM:
       "https://moodybible.canto.com/direct/image/vvhu0b6cf120n319ctrh33fo5t/IlGBC2vdcUA_FoDVss5M8KnddiE/original?content-type=image%2Fpng&name=Radio+Moody.png",
-    bannerColor: "#003a5c",
+    bannerColor: "#799b3d",
     stream:
       "http://playerservices.streamtheworld.com/api/livestream-redirect/WMBIAMAAC.aac",
     fallbackstream:
