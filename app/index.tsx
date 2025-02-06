@@ -23,11 +23,7 @@ export default function Index() {
             <View style={styles.localStationContainer}>
               <LocalStationItem />
               <Link href="/local-stations">
-                <FontAwesome5
-                  name="location-arrow"
-                  style={styles.locationIcon}
-                  size={24}
-                />
+                <FontAwesome5 name="location-arrow" size={24} />
               </Link>
             </View>
           }

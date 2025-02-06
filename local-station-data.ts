@@ -1,4 +1,6 @@
-export const LOCAL_STATION_DATA = [
+import { Station } from "./types/interfaces";
+
+export const LOCAL_STATION_DATA: Station[] = [
   {
     tritonId: "WCRFFM",
     callLetters: "WCRF",

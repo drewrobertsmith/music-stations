@@ -1,13 +1,4 @@
-export interface Station {
-  id: string;
-  tritonId: string;
-  title: string;
-  applogoM: string;
-  bannerColor: string;
-  stream: string;
-  fallbackstream: string;
-  name: string;
-}
+import { Station } from "./types/interfaces";
 
 export const STATION_DATA: Station[] = [
   {

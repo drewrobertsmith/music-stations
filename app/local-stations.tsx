@@ -1,14 +1,21 @@
 import { LOCAL_STATION_DATA } from "@/local-station-data";
-import { FlatList, Text, View } from "react-native";
+import { FlatList, SafeAreaView, StyleSheet, Text, View } from "react-native";
+import { SortableGridRenderItem } from "react-native-sortables";
 
 export default function Page() {
-  return (
-    <View>
-      <FlatList
-        data={LOCAL_STATION_DATA}
-        keyExtractor={(item) => item.name}
-        renderItem={({ item }) => <Text>{item.name}</Text>}
-      />
-    </View>
-  );
+  const renderItem: SortableGridRenderItem<string> = ({ item }) => {
+    return (
+      <View>
+        <Text>{item}</Text>
+      </View>
+    );
+  };
+
+  return <SafeAreaView style={styles.container}></SafeAreaView>;
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+});

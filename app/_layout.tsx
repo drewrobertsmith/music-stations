@@ -34,9 +34,11 @@ export default function RootLayout() {
           />
           <Stack.Screen
             name="local-stations"
-            options={{
-              presentation: "modal",
-            }}
+            options={
+              {
+                // presentation: "modal",
+              }
+            }
           />
         </Stack>
       </QueryClientProvider>
