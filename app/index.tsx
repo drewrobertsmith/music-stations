@@ -1,10 +1,12 @@
+import LocalStationItem from "@/components/location-station-item";
 import Player from "@/components/player";
 import StationItem from "@/components/station-item";
 import { STATION_DATA } from "@/station-data";
-import { Stack } from "expo-router";
+import { FontAwesome5 } from "@expo/vector-icons";
+import { Link, Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import { useState } from "react";
-import { FlatList, StyleSheet, View } from "react-native";
+import { FlatList, StyleSheet, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function Index() {
@@ -17,6 +19,19 @@ export default function Index() {
         style={[styles.container, { backgroundColor: stationAccentColor }]}
       >
         <FlatList
+          ListHeaderComponent={
+            <View style={styles.localStationContainer}>
+              <LocalStationItem />
+              <Link href="/local-stations">
+                <FontAwesome5
+                  name="location-arrow"
+                  style={styles.locationIcon}
+                  size={24}
+                />
+              </Link>
+            </View>
+          }
+          contentContainerStyle={styles.listContainer}
           data={STATION_DATA}
           keyExtractor={(item) => item.id}
           renderItem={({ item }) => (
@@ -38,5 +53,13 @@ const styles = StyleSheet.create({
     paddingHorizontal: 8,
     paddingBottom: 8,
     justifyContent: "space-between",
+  },
+  listContainer: {},
+  localStationContainer: {
+    flex: 1,
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    marginRight: 16,
   },
 });

@@ -32,6 +32,12 @@ export default function RootLayout() {
               title: "Music Stations",
             }}
           />
+          <Stack.Screen
+            name="local-stations"
+            options={{
+              presentation: "modal",
+            }}
+          />
         </Stack>
       </QueryClientProvider>
     </AudioProvider>

@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
     paddingVertical: 12,
   },
   stationTitle: {
-    fontSize: 40,
+    fontSize: 36,
     fontWeight: "bold",
   },
 });
