@@ -23,11 +23,11 @@ export default function StationItem({
             albumArt: item.applogoM,
             stationName: item.title,
           });
-          // play({
-          //   uri: item.fallbackstream,
-          // });
-          player.replace({ uri: item.fallbackstream });
-          player.play();
+          play({
+            uri: item.fallbackstream,
+          });
+          // player.replace({ uri: item.fallbackstream });
+          // player.play();
           setStationAccentColor(item.bannerColor);
         }}
       >

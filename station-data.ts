@@ -19,7 +19,7 @@ export const STATION_DATA: Station[] = [
       "https://moodybible.canto.com/direct/image/42dfm4inb554r66omev6n8ni2s/q8R_QU4QyIxuAgphI-6QlCdxyEg/original?content-type=image%2Fpng&name=Praise+and+Worship.png",
     bannerColor: "#46a147",
     stream:
-      "http://playerservices.streamtheworld.com/api/livestream-redirect/IM_1AAC.aac",
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/IM_1AAC.aac",
     fallbackstream:
       "https://playerservices.streamtheworld.com/api/livestream-redirect/IM_1.mp3",
   },
@@ -32,9 +32,9 @@ export const STATION_DATA: Station[] = [
       "https://moodybible.canto.com/direct/image/08s24giflh6b9dbauumhrfv01r/n1CNUtGjxSFMyNIqIZtUQgPdjY4/original?content-type=image%2Fjpeg&name=Majesty_1400x1400.jpg",
     bannerColor: "#66bac4",
     stream:
-      "http://playerservices.streamtheworld.com/api/livestream-redirect/IM_2AAC.aac",
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/IM_2AAC.aac",
     fallbackstream:
-      "http://playerservices.streamtheworld.com/api/livestream-redirect/IM_2.mp3",
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/IM_2.mp3",
   },
   {
     id: "29230",
@@ -45,9 +45,9 @@ export const STATION_DATA: Station[] = [
       "https://moodybible.canto.com/direct/image/8e6v64b22h2er3ih0jku5pe942/_KQGQ4Q9xTwuUZTi5Rjwodl0XJU/original?content-type=image%2Fpng&name=Urban+Praise.png",
     bannerColor: "#a84e20",
     stream:
-      "http://playerservices.streamtheworld.com/api/livestream-redirect/IM_3AAC.aac",
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/IM_3AAC.aac",
     fallbackstream:
-      "http://playerservices.streamtheworld.com/api/livestream-redirect/IM_3.mp3",
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/IM_3.mp3",
   },
   {
     id: "28696",
@@ -58,9 +58,9 @@ export const STATION_DATA: Station[] = [
       "https://moodybible.canto.com/direct/image/72o8qlpsf95i14lpu4b4ulaq77/BC3eaSNR_mEVR2XCiofo3kCmQbs/original?content-type=image%2Fpng&name=Proclaim.png",
     bannerColor: "#793134",
     stream:
-      "http://playerservices.streamtheworld.com/api/livestream-redirect/IM_4AAC.aac",
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/IM_4AAC.aac",
     fallbackstream:
-      "http://playerservices.streamtheworld.com/api/livestream-redirect/IM_4.mp3",
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/IM_4.mp3",
   },
   {
     id: "342809",
@@ -71,9 +71,9 @@ export const STATION_DATA: Station[] = [
       "https://moodybible.canto.com/direct/image/0trvejb5pt75rduq8ggn738c6e/UIEQzzS-rJUX4n2NlgEAgZfdnFM/original?content-type=image%2Fpng&name=so-gospel-radio-logo_580x580.png",
     bannerColor: "#005281",
     stream:
-      "http://playerservices.streamtheworld.com/api/livestream-redirect/IM_5AAC.aac",
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/IM_5AAC.aac",
     fallbackstream:
-      "http://playerservices.streamtheworld.com/api/livestream-redirect/IM_5.mp3",
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/IM_5.mp3",
   },
   {
     id: "186070",
@@ -84,9 +84,9 @@ export const STATION_DATA: Station[] = [
       "https://moodybible.canto.com/direct/image/vvhu0b6cf120n319ctrh33fo5t/IlGBC2vdcUA_FoDVss5M8KnddiE/original?content-type=image%2Fpng&name=Radio+Moody.png",
     bannerColor: "#799b3d",
     stream:
-      "http://playerservices.streamtheworld.com/api/livestream-redirect/WMBIAMAAC.aac",
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/WMBIAMAAC.aac",
     fallbackstream:
-      "http://playerservices.streamtheworld.com/api/livestream-redirect/WMBIAM.mp3",
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/WMBIAM.mp3",
   },
   {
     id: "27998",
@@ -97,8 +97,8 @@ export const STATION_DATA: Station[] = [
       "https://moodybible.canto.com/direct/image/cfjcrucctd3avf20h55c5vj800/XF2jF3Eq7pyGeAUTLkEaX5Yzmz4/original?content-type=image%2Fpng&name=Moody+Radio+Network.png",
     bannerColor: "#799b3d",
     stream:
-      "http://playerservices.streamtheworld.com/api/livestream-redirect/MB2AAC.aac",
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/MB2AAC.aac",
     fallbackstream:
-      "http://playerservices.streamtheworld.com/api/livestream-redirect/MB2.mp3",
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/MB2.mp3",
   },
 ];
