@@ -1,5 +1,5 @@
 import { useAudio } from "@/contexts/audio-context";
-import { Station } from "@/station-data";
+import { Station } from "@/types/interfaces";
 import React, { SetStateAction, useState } from "react";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
@@ -10,25 +10,25 @@ export default function StationItem({
   item: Station;
   setStationAccentColor: React.Dispatch<SetStateAction<string>>;
 }) {
-  const { play, currentSource, setCurrentSource, player } = useAudio();
+  const { play, currentSource, setCurrentSource } = useAudio();
 
   return (
     <View style={styles.itemContainer}>
       <TouchableOpacity
         onPress={() => {
           setCurrentSource({
-            trackId: item.id,
+            trackId: item.tritonId,
             tritonId: item.tritonId,
-            url: item.fallbackstream,
+            url: item.stream,
             albumArt: item.applogoM,
-            stationName: item.title,
+            stationName: item.name,
           });
           play({
             uri: item.fallbackstream,
           });
           // player.replace({ uri: item.fallbackstream });
           // player.play();
-          setStationAccentColor(item.bannerColor);
+          setStationAccentColor(item.backgroundColor);
         }}
       >
         <Text
@@ -42,7 +42,7 @@ export default function StationItem({
             },
           ]}
         >
-          {item.title}
+          {item.name}
         </Text>
       </TouchableOpacity>
     </View>

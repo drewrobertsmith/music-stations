@@ -17,7 +17,7 @@ interface Track {
   trackId: string;
   url: string;
   tritonId: string;
-  albumArt: string;
+  albumArt?: string;
   stationName: string;
 }
 

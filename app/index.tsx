@@ -1,7 +1,9 @@
 import LocalStationItem from "@/components/location-station-item";
 import Player from "@/components/player";
 import StationItem from "@/components/station-item";
+import { LOCAL_STATION_DATA } from "@/local-station-data";
 import { STATION_DATA } from "@/station-data";
+import { Station } from "@/types/interfaces";
 import { FontAwesome5 } from "@expo/vector-icons";
 import { Link, Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
@@ -11,6 +13,9 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function Index() {
   const [stationAccentColor, setStationAccentColor] = useState("#e5e5e5");
+  const [defaultLocalStation, setDefaultLocalStation] = useState<Station>(
+    LOCAL_STATION_DATA[9],
+  );
 
   return (
     <>
@@ -21,7 +26,11 @@ export default function Index() {
         <FlatList
           ListHeaderComponent={
             <View style={styles.localStationContainer}>
-              <LocalStationItem />
+              <LocalStationItem
+                defaultLocalStation={defaultLocalStation}
+                setDefaultLocalStation={setDefaultLocalStation}
+                setStationAccentColor={setStationAccentColor}
+              />
               <Link href="/local-stations">
                 <FontAwesome5 name="location-arrow" size={24} />
               </Link>
@@ -29,7 +38,7 @@ export default function Index() {
           }
           contentContainerStyle={styles.listContainer}
           data={STATION_DATA}
-          keyExtractor={(item) => item.id}
+          keyExtractor={(item) => item.tritonId}
           renderItem={({ item }) => (
             <StationItem
               item={item}

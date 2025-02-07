@@ -4,7 +4,8 @@ export const LOCAL_STATION_DATA: Station[] = [
   {
     tritonId: "WCRFFM",
     callLetters: "WCRF",
-    url: "https://playerservices.streamtheworld.com/api/livestream-redirect/WCRFFM.mp3",
+    stream:
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/WCRFFM.mp3",
     name: "103.3 FM - Cleveland",
     backgroundColor: "#74a433",
     lat: 41.29679,
@@ -13,7 +14,8 @@ export const LOCAL_STATION_DATA: Station[] = [
   {
     tritonId: "KMBIFM",
     callLetters: "KMBI",
-    url: "https://playerservices.streamtheworld.com/api/livestream-redirect/KMBIFM.mp3",
+    stream:
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/KMBIFM.mp3",
     name: "107.9 FM - Spokane",
     backgroundColor: "#74a433",
     lat: 47.57051,
@@ -22,7 +24,8 @@ export const LOCAL_STATION_DATA: Station[] = [
   {
     tritonId: "WFCMFM",
     callLetters: "WFCM",
-    url: "https://playerservices.streamtheworld.com/api/livestream-redirect/WFCMFM.mp3",
+    stream:
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/WFCMFM.mp3",
     name: "1200 AM - Nashville",
     backgroundColor: "#74a433",
     lat: 36.208333,
@@ -31,7 +34,8 @@ export const LOCAL_STATION_DATA: Station[] = [
   {
     tritonId: "WMBWFM",
     callLetters: "WMBW",
-    url: "https://playerservices.streamtheworld.com/api/livestream-redirect/WMBWFM.mp3",
+    stream:
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/WMBWFM.mp3",
     name: "88.9 FM - Chattanooga",
     backgroundColor: "#74a433",
     lat: 34.96217,
@@ -40,7 +44,8 @@ export const LOCAL_STATION_DATA: Station[] = [
   {
     tritonId: "MB2",
     callLetters: "WMFT",
-    url: "https://playerservices.streamtheworld.com/api/livestream-redirect/MB2.mp3",
+    stream:
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/MB2.mp3",
     name: "88.9 FM - Tuscaloosa/Birmingham",
     backgroundColor: "#74a433",
     lat: 33.33871,
@@ -49,7 +54,8 @@ export const LOCAL_STATION_DATA: Station[] = [
   {
     tritonId: "WDLMFM",
     callLetters: "WDLM",
-    url: "https://playerservices.streamtheworld.com/api/livestream-redirect/WDLMFM.mp3",
+    stream:
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/WDLMFM.mp3",
     name: "89.3 FM - East Moline",
     backgroundColor: "#74a433",
     lat: 41.54747,
@@ -58,7 +64,8 @@ export const LOCAL_STATION_DATA: Station[] = [
   {
     tritonId: "WRMBFM",
     callLetters: "WRMB",
-    url: "https://playerservices.streamtheworld.com/api/livestream-redirect/WRMBFM.mp3",
+    stream:
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/WRMBFM.mp3",
     name: "89.3 FM - South Florida",
     backgroundColor: "#74a433",
     lat: 26.51796,
@@ -67,7 +74,8 @@ export const LOCAL_STATION_DATA: Station[] = [
   {
     tritonId: "WGNBFM",
     callLetters: "WGNB",
-    url: "https://playerservices.streamtheworld.com/api/livestream-redirect/WGNBFM.mp3",
+    stream:
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/WGNBFM.mp3",
     name: "89.3 FM - Zeeland",
     backgroundColor: "#74a433",
     lat: 42.83721,
@@ -76,7 +84,8 @@ export const LOCAL_STATION_DATA: Station[] = [
   {
     tritonId: "MB2",
     callLetters: "KMBN",
-    url: "https://playerservices.streamtheworld.com/api/livestream-redirect/MB2.mp3",
+    stream:
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/MB2.mp3",
     name: "89.7 FM - Las Cruces",
     backgroundColor: "#74a433",
     lat: 32.2783,
@@ -85,7 +94,8 @@ export const LOCAL_STATION_DATA: Station[] = [
   {
     tritonId: "WMBIFM",
     callLetters: "WMBI",
-    url: "https://playerservices.streamtheworld.com/api/livestream-redirect/WMBIFM.mp3",
+    stream:
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/WMBIFM.mp3",
     name: "90.1 FM - Chicago",
     backgroundColor: "#74a433",
     lat: 41.9278,
@@ -94,7 +104,8 @@ export const LOCAL_STATION_DATA: Station[] = [
   {
     tritonId: "MB2",
     callLetters: "WJSO",
-    url: "https://playerservices.streamtheworld.com/api/livestream-redirect/MB2.mp3",
+    stream:
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/MB2.mp3",
     name: "90.1 FM - Pikeville",
     backgroundColor: "#74a433",
     lat: 37.46444,
@@ -103,7 +114,8 @@ export const LOCAL_STATION_DATA: Station[] = [
   {
     tritonId: "WKESFM",
     callLetters: "WKES",
-    url: "https://playerservices.streamtheworld.com/api/livestream-redirect/WKESFM.mp3",
+    stream:
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/WKESFM.mp3",
     name: "91.1 FM - St. Petersburg",
     backgroundColor: "#74a433",
     lat: 28.07937,
@@ -112,7 +124,8 @@ export const LOCAL_STATION_DATA: Station[] = [
   {
     tritonId: "WFCMFM",
     callLetters: "WFCM",
-    url: "https://playerservices.streamtheworld.com/api/livestream-redirect/WFCMFM.mp3",
+    stream:
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/WFCMFM.mp3",
     name: "91.7 FM - Murfreesboro",
     backgroundColor: "#74a433",
     lat: 35.80019,
@@ -121,7 +134,8 @@ export const LOCAL_STATION_DATA: Station[] = [
   {
     tritonId: "MB2",
     callLetters: "WCDC",
-    url: "https://playerservices.streamtheworld.com/api/livestream-redirect/MB2.mp3",
+    stream:
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/MB2.mp3",
     name: "950 AM - Charleston",
     backgroundColor: "#74a433",
     lat: null,
@@ -130,7 +144,8 @@ export const LOCAL_STATION_DATA: Station[] = [
   {
     tritonId: "WGNRFM",
     callLetters: "WGNR",
-    url: "https://playerservices.streamtheworld.com/api/livestream-redirect/WGNRFM.mp3",
+    stream:
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/WGNRFM.mp3",
     name: "97.9 FM - Indianapolis",
     backgroundColor: "#74a433",
     lat: 40.06235,
@@ -139,7 +154,8 @@ export const LOCAL_STATION_DATA: Station[] = [
   {
     tritonId: "WFCMFM",
     callLetters: "WFCM",
-    url: "httpss://playerservices.streamtheworld.com/api/livestream-redirect/WFCMFM.mp3",
+    stream:
+      "httpss://playerservices.streamtheworld.com/api/livestream-redirect/WFCMFM.mp3",
     name: "98.7 FM - Nashville",
     backgroundColor: "#74a433",
     lat: 35.80019,

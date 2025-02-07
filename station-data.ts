@@ -2,91 +2,84 @@ import { Station } from "./types/interfaces";
 
 export const STATION_DATA: Station[] = [
   {
-    id: "28018",
     tritonId: "IM_1",
-    title: "Praise and Worship",
-    name: "PRWR",
+    name: "Praise and Worship",
+    callLetters: "PRWR",
     applogoM:
       "https://moodybible.canto.com/direct/image/42dfm4inb554r66omev6n8ni2s/q8R_QU4QyIxuAgphI-6QlCdxyEg/original?content-type=image%2Fpng&name=Praise+and+Worship.png",
-    bannerColor: "#46a147",
+    backgroundColor: "#46a147",
     stream:
       "https://playerservices.streamtheworld.com/api/livestream-redirect/IM_1AAC.aac",
     fallbackstream:
       "https://playerservices.streamtheworld.com/api/livestream-redirect/IM_1.mp3",
   },
   {
-    id: "493866",
     tritonId: "IM_2",
-    title: "Majesty Radio",
-    name: "MJST",
+    name: "Majesty Radio",
+    callLetters: "MJST",
     applogoM:
       "https://moodybible.canto.com/direct/image/08s24giflh6b9dbauumhrfv01r/n1CNUtGjxSFMyNIqIZtUQgPdjY4/original?content-type=image%2Fjpeg&name=Majesty_1400x1400.jpg",
-    bannerColor: "#66bac4",
+    backgroundColor: "#66bac4",
     stream:
       "https://playerservices.streamtheworld.com/api/livestream-redirect/IM_2AAC.aac",
     fallbackstream:
       "https://playerservices.streamtheworld.com/api/livestream-redirect/IM_2.mp3",
   },
   {
-    id: "29230",
     tritonId: "IM_3",
-    title: "Urban Praise",
-    name: "URPR",
+    name: "Urban Praise",
+    callLetters: "URPR",
     applogoM:
       "https://moodybible.canto.com/direct/image/8e6v64b22h2er3ih0jku5pe942/_KQGQ4Q9xTwuUZTi5Rjwodl0XJU/original?content-type=image%2Fpng&name=Urban+Praise.png",
-    bannerColor: "#a84e20",
+    backgroundColor: "#a84e20",
     stream:
       "https://playerservices.streamtheworld.com/api/livestream-redirect/IM_3AAC.aac",
     fallbackstream:
       "https://playerservices.streamtheworld.com/api/livestream-redirect/IM_3.mp3",
   },
   {
-    id: "28696",
     tritonId: "IM_4",
-    title: "Proclaim",
-    name: "PCLM",
+    name: "Proclaim",
+    callLetters: "PCLM",
     applogoM:
       "https://moodybible.canto.com/direct/image/72o8qlpsf95i14lpu4b4ulaq77/BC3eaSNR_mEVR2XCiofo3kCmQbs/original?content-type=image%2Fpng&name=Proclaim.png",
-    bannerColor: "#793134",
+    backgroundColor: "#793134",
     stream:
       "https://playerservices.streamtheworld.com/api/livestream-redirect/IM_4AAC.aac",
     fallbackstream:
       "https://playerservices.streamtheworld.com/api/livestream-redirect/IM_4.mp3",
   },
   {
-    id: "342809",
     tritonId: "IM_5",
-    title: "Southern Gospel Radio",
-    name: "SGR",
+    name: "Southern Gospel Radio",
+    callLetters: "SGR",
     applogoM:
       "https://moodybible.canto.com/direct/image/0trvejb5pt75rduq8ggn738c6e/UIEQzzS-rJUX4n2NlgEAgZfdnFM/original?content-type=image%2Fpng&name=so-gospel-radio-logo_580x580.png",
-    bannerColor: "#005281",
+    backgroundColor: "#005281",
     stream:
       "https://playerservices.streamtheworld.com/api/livestream-redirect/IM_5AAC.aac",
     fallbackstream:
       "https://playerservices.streamtheworld.com/api/livestream-redirect/IM_5.mp3",
   },
   {
-    id: "186070",
     tritonId: "WMBIAM",
-    title: "Radio Moody (Español)",
-    name: "rdmd",
+    name: "Radio Moody (Español)",
+    callLetters: "rdmd",
     applogoM:
       "https://moodybible.canto.com/direct/image/vvhu0b6cf120n319ctrh33fo5t/IlGBC2vdcUA_FoDVss5M8KnddiE/original?content-type=image%2Fpng&name=Radio+Moody.png",
-    bannerColor: "#799b3d",
+    backgroundColor: "#799b3d",
     stream:
       "https://playerservices.streamtheworld.com/api/livestream-redirect/WMBIAMAAC.aac",
     fallbackstream:
       "https://playerservices.streamtheworld.com/api/livestream-redirect/WMBIAM.mp3",
   },
   {
-    id: "27998",
     tritonId: "MB2",
-    title: "Moody Radio Network",
-    name: "MDRN",
+    name: "Moody Radio Network",
+    callLetters: "MDRN",
     applogoM:
       "https://moodybible.canto.com/direct/image/cfjcrucctd3avf20h55c5vj800/XF2jF3Eq7pyGeAUTLkEaX5Yzmz4/original?content-type=image%2Fpng&name=Moody+Radio+Network.png",
-    bannerColor: "#799b3d",
+    backgroundColor: "#799b3d",
     stream:
       "https://playerservices.streamtheworld.com/api/livestream-redirect/MB2AAC.aac",
     fallbackstream:

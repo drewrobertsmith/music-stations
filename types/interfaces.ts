@@ -1,15 +1,11 @@
 export interface Station {
-  id?: any | null;
   tritonId: string;
-  title?: string;
-  callLetters?: string;
-  url?: string;
+  callLetters: string;
   applogoM?: string;
-  bannerColor?: string;
-  stream?: string;
+  stream: string;
   fallbackstream?: string;
   name: string;
-  backgroundColor?: string;
-  lat?: number;
-  lng?: number;
+  backgroundColor: string;
+  lat?: number | null;
+  lng?: number | null;
 }
